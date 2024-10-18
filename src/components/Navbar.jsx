@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const normalNavStyles = "text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
   const activeNavStyle =`${normalNavStyles} bg-black`
-  const linkClass = ({isActive})=> isActive ? `${activeNavStyle}` : `${normalNavStyles}`;
+  const linkClass = ({isActive}) => isActive? activeNavStyle : normalNavStyles;
   
   return (
     <>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className="flex space-x-2">
                   <NavLink
                     to="/"
-                    className={linkClass} 
+                    className={linkClass}
                   >
                     Home
                   </NavLink>
