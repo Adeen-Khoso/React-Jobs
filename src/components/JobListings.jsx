@@ -7,10 +7,9 @@ const JobListings = () => {
   let recentJobs = Jobs.slice(0,3);  
   let headingText = "Recent Jobs";
   
-  const location = useLocation();
-  const pathname = location.pathname;
+  const location = useLocation().pathname;
 
-  if(pathname == '/jobs'){
+  if(location == '/jobs'){
     recentJobs = Jobs;
     headingText = "Browse Jobs"
   }
