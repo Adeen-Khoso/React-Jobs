@@ -1,10 +1,9 @@
 import React from "react";
-import Jobs from "../jobs.json";
 import JobListing from "./JobListing";
+import {useState, useEffect} from 'react';
 
 const JobListings = ({atHome}) => {
-  let jobListings = atHome? Jobs.slice(0,3) : Jobs;
-  
+   
   return (
     <section className="bg-blue-50 px-4 py-10">
       <div className="container-xl lg:container m-auto">
