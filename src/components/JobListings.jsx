@@ -10,7 +10,7 @@ const JobListings = ({ atHome }) => {
   useEffect(() => {
     try {
       const fetchingData = async () => {
-        const res = await fetch("http://localhost:5000/jobs");
+        const res = await fetch("/api/jobs");
         const data = await res.json();
         setJobs(atHome ? data.slice(0, 3) : data);
         setLoading(false);
