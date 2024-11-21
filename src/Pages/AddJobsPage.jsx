@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "../components/form";
+import { toast } from "react-toastify";
 
 const AddJobsPage = () => {
   const handleSubmit = async (newJob) => {
@@ -10,6 +11,7 @@ const AddJobsPage = () => {
       },
       body: JSON.stringify(newJob),
     });
+    toast.success("Job added successfully");
   };
 
   return <Form handleSubmit={handleSubmit} />;
