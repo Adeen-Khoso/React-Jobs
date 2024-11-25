@@ -10,7 +10,9 @@ const JobListings = ({ atHome }) => {
   useEffect(() => {
     try {
       const fetchingData = async () => {
-        const res = await fetch("/api/jobs");
+        const res = await fetch(
+          "https://shorthaired-misty-dilophosaurus.glitch.me/jobs"
+        );
         const data = await res.json();
 
         setJobs(atHome ? data.slice(0, 3) : data);

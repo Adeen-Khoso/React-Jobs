@@ -7,9 +7,12 @@ const JobPage = () => {
   const jobInfo = useLoaderData();
 
   const deleteJob = async (id) => {
-    const res = await fetch(`/api/jobs/${id}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://shorthaired-misty-dilophosaurus.glitch.me/jobs/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     toast.success("Job deleted successfully");
   };
 
