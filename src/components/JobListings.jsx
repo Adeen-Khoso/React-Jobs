@@ -12,7 +12,6 @@ const JobListings = ({ atHome }) => {
       const fetchingData = async () => {
         const res = await fetch("/api/jobs");
         const data = await res.json();
-        console.log(data);
 
         setJobs(atHome ? data.slice(0, 3) : data);
         setLoading(false);
