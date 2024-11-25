@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://shorthaired-misty-dilophosaurus.glitch.me/",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
