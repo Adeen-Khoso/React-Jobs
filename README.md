@@ -1,8 +1,21 @@
-# React + Vite
+# React Jobs Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a React-based web application that allows users to explore job listings in their vicinity. Users can also add, edit, and manage jobs directly through the interface. The project is styled using Tailwind CSS, providing a modern and responsive design.
 
-Currently, two official plugins are available:
+## Features
+- **View Jobs**: Browse through a list of job opportunities around you.
+- **Add Jobs**: Add new job postings easily.
+- **Edit Jobs**: Modify existing job details as needed.
+- **No Authentication**: Fully open, no login or signup required.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **React**: Frontend library for building the user interface.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+  
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Happy Coding!**
